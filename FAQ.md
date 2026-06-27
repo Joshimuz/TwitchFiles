@@ -644,4 +644,6 @@ Long A: *todo*
 
 ***
 
-#### Proofread and edited by WaterArko, CallumUncensored, and SpeedyFolf
+Proofread and edited by WaterArko, CallumUncensored, and SpeedyFolf.
+
+You can contribute to or read the raw contents of the FAQ here: https://github.com/Joshimuz/TwitchFiles/edit/master/FAQ.md
