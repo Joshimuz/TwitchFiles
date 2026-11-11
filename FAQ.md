@@ -48,6 +48,9 @@
 - [No Major Glitches FAQ](#no-major-glitches-faq)
     - [What are Major Glitches?](#what-are-major-glitches)
     - [Why are you swimming randomly?](#why-are-you-swimming-randomly)
+ 
+- [100% Speedruns FAQ](#100-speedruns-faq)
+	- [What are "LIDL" exports?](#what-are-lidl-exports)
 
 - [DYOM Speedruns FAQ](#dyom-speedruns-faq)
 	- [What is DYOM?](#what-is-dyom)
@@ -527,6 +530,20 @@ Major glitches are any glitches that manipulate the OnMissionFlag variable (expl
 ### Why are you swimming randomly?
 
 In San Fierro there is one mission that requires me to have upgraded my lung capacity stat at least twice before it will let me start it. I try to do the swimming required for these upgrades during parts of the game where I would lose little to no time by swimming.
+
+***
+
+## 100% Speedruns FAQ
+
+### What are "LIDL" exports?
+
+The export glitch was found by *dezgeg*, who used a Tow Truck to pull a car into the export marker in the Super Sunshine Autos mod and exported the Tow Truck instead. 
+Examining the code, we found the game has two ways to export vehicles – one by driving into the marker, and the other by dropping it into the marker from the crane.
+The game first checks the crane car and finds that an export should happen. However, the other check overwrites `$TEMPVAR_ACTOR_CAR` before the export actually happens.
+Unfortunately we cannot find 30 list-1 cars fast enough to make the glitch worthwhile for all 3 lists, but as a side effect the glitch also makes the exported car importable,
+so we glitch export one list-2 car during list-1 and then import and export it repeatedly once we finish list-1 normally.
+As an optimization, parked cars are in low physics mode, and since the crane drop export waits until the car has hit the ground, our parked car does not export until physics is returned to it.
+This is similar to the Monster car wheel glitch. The car is considered stationary when it stops moving, is hit by a shot or is involved in a collision. 
 
 ***
 
